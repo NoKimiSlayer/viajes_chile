@@ -9,132 +9,176 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <header class="navbar-header">
-        <nav class="nav-container">
-            <div class="nav-logo">
-                <a href="#inicio">
-                    <img src="assets/img/viajes.svg" alt="Logo Viajes Chile">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-5">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+                    <img src="assets/img/viajes.svg" alt="Logo Viajes Chile" width="30" height="30">
                     <span>Viajes Chile</span>
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-controls="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#quienes-somos">Quiénes Somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#destacados">Destacados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
-            
-            <ul class="nav-menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#quienes-somos">Quiénes Somos</a></li>
-                <li><a href="#destacados">Destacados</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio" class="hero-section">
-            <div class="carousel-container">
-                <img src="assets/img/carousel1.jpg" alt="Paisaje de Chile 1" class="hero-img">
+        <section id="inicio">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/carousel1.jpg" class="d-block w-100 hero-img" alt="Paisaje de Chile 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carousel2.jpg" class="d-block w-100 hero-img" alt="Paisaje de Chile 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carousel3.jpg" class="d-block w-100 hero-img" alt="Paisaje de Chile 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
 
-        <section id="quienes-somos" class="section-container">
-            <h2 class="section-title">¿QUIÉNES SOMOS?</h2>
-            <hr class="section-divider">
+        <section id="quienes-somos" class="container py-5 d-none d-md-block">
+            <h2 class="text-center text-uppercase fw-light tracking-widest my-4">¿QUIÉNES SOMOS?</h2>
+            <hr class="bg-info opacity-100 mb-5" style="height: 1px;">
             
-            <div class="grid-three-columns">
-                <article class="info-card">
-                    <div class="icon-placeholder"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</p>
+            <div class="row g-4">
+                <article class="col-md-4">
+                    <div class="bg-info text-center py-2 text-white mb-3">
+                        <i class="fas fa-plane fa-lg"></i>
+                    </div>
+                    <p class="fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</p>
                 </article>
 
-                <article class="info-card">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</p>
-                    <div class="icon-placeholder"></div>
-                </article>
-
-                <article class="info-card">
-                    <div class="icon-placeholder"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="destacados" class="section-container bg-dark-variant">
-            <h2 class="section-title">DESTACADOS</h2>
-            <hr class="section-divider">
-            
-            <div class="grid-four-columns">
-                <article class="destination-card">
-                    <img src="assets/img/card1.jpg" alt="Destino Turístico 1">
-                    <div class="card-body">
-                        <h3>Región de los Lagos</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
+                <article class="col-md-4">
+                    <p class="fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</p>
+                    <div class="bg-info text-center py-2 text-white mt-3">
+                        <i class="fas fa-mountain fa-lg"></i>
                     </div>
                 </article>
 
-                <article class="destination-card">
-                    <img src="assets/img/card2.jpg" alt="Destino Turístico 2">
-                    <div class="card-body">
-                        <h3>Desierto de Atacama</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
+                <article class="col-md-4">
+                    <div class="bg-info text-center py-2 text-white mb-3">
+                        <i class="fas fa-route fa-lg"></i>
                     </div>
-                </article>
-
-                <article class="destination-card">
-                    <img src="assets/img/card3.jpg" alt="Destino Turístico 3">
-                    <div class="card-body">
-                        <h3>Norte Chico</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
-                    </div>
-                </article>
-
-                <article class="destination-card">
-                    <img src="assets/img/card4.jpg" alt="Destino Turístico 4">
-                    <div class="card-body">
-                        <h3>Patagonia Chilena</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
-                    </div>
+                    <p class="fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</p>
                 </article>
             </div>
         </section>
 
-        <section id="contacto" class="section-container">
-            <h2 class="section-title">CONTACTO</h2>
-            <hr class="section-divider">
+        <section id="destacados" class="bg-dark-variant py-5">
+            <div class="container">
+                <h2 class="text-center text-uppercase fw-light my-4">DESTACADOS</h2>
+                <hr class="bg-info opacity-100 mb-5" style="height: 1px;">
+                
+                <div class="row row-cols-1 row-cols-md-4 g-4 pb-5">
+                    <div class="col">
+                        <article class="card h-100 bg-black text-white border-secondary">
+                            <img src="assets/img/card1.jpg" class="card-img-top card-custom-img" alt="Región de los Lagos">
+                            <div class="card-body">
+                                <h3 class="card-title h6 text-info fw-bold">Región de los Lagos</h3>
+                                <p class="card-text small fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="card h-100 bg-black text-white border-secondary">
+                            <img src="assets/img/card2.jpg" class="card-img-top card-custom-img" alt="Desierto de Atacama">
+                            <div class="card-body">
+                                <h3 class="card-title h6 text-info fw-bold">Desierto de Atacama</h3>
+                                <p class="card-text small fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="card h-100 bg-black text-white border-secondary">
+                            <img src="assets/img/card3.jpg" class="card-img-top card-custom-img" alt="Norte Chico">
+                            <div class="card-body">
+                                <h3 class="card-title h6 text-info fw-bold">Norte Chico</h3>
+                                <p class="card-text small fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="card h-100 bg-black text-white border-secondary">
+                            <img src="assets/img/card4.jpg" class="card-img-top card-custom-img" alt="Patagonia Chilena">
+                            <div class="card-body">
+                                <h3 class="card-title h6 text-info fw-bold">Patagonia Chilena</h3>
+                                <p class="card-text small fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="container py-5">
+            <h2 class="text-center text-uppercase fw-light my-4">CONTACTO</h2>
+            <hr class="bg-info opacity-100 mb-5" style="height: 1px;">
             
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required>
+            <form class="mx-auto" style="max-width: 800px;">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label small">Nombre</label>
+                    <input type="text" class="form-control bg-transparent text-white border-light rounded-0" id="nombre" required>
                 </div>
 
-                <div class="form-group">
-                    <label for="asunto">Asunto</label>
-                    <input type="text" id="asunto" name="asunto" required>
+                <div class="mb-3">
+                    <label for="asunto" class="form-label small">Asunto</label>
+                    <input type="text" class="form-control bg-transparent text-white border-light rounded-0" id="asunto" required>
                 </div>
 
-                <div class="form-group">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label small">Mensaje</label>
+                    <textarea class="form-control bg-transparent text-white border-light rounded-0" id="mensaje" rows="6" required></textarea>
                 </div>
 
-                <button type="submit" class="btn-submit">Enviar</button>
+                <button type="submit" class="btn btn-info text-black fw-bold rounded-0 px-4">Enviar</button>
             </form>
         </section>
     </main>
 
-    <footer class="main-footer">
-        <div class="footer-brand">
-            <p>VIAJES CHILE</p>
-        </div>
-        <div class="footer-socials">
-            <ul>
-                <li><a href="https://github.com" target="_blank">GitHub</a></li>
-                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-            </ul>
+    <footer class="bg-info text-black py-4 px-5">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="fw-bold tracking-widest">
+                <p class="m-0">VIAJES CHILE</p>
+            </div>
+            <div>
+                <ul class="list-inline m-0 fs-4">
+                    <li class="list-inline-item"><a href="https://github.com" target="_blank" class="text-black"><i class="fab fa-github-square"></i></a></li>
+                    <li class="list-inline-item"><a href="https://linkedin.com" target="_blank" class="text-black"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com" target="_blank" class="text-black"><i class="fab fa-twitter-square"></i></a></li>
+                    <li class="list-inline-item"><a href="https://facebook.com" target="_blank" class="text-black"><i class="fab fa-facebook-square"></i></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 
