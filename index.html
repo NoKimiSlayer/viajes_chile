@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes Chile</title>
-    </head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 <body>
 
-    <header>
-        <nav>
-            <div>
+    <header class="navbar-header">
+        <nav class="nav-container">
+            <div class="nav-logo">
                 <a href="#inicio">
                     <img src="assets/img/viajes.svg" alt="Logo Viajes Chile">
-                    Viajes Chile
+                    <span>Viajes Chile</span>
                 </a>
             </div>
             
-            <ul>
+            <ul class="nav-menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#quienes-somos">Quiénes Somos</a></li>
                 <li><a href="#destacados">Destacados</a></li>
@@ -26,101 +32,103 @@
     </header>
 
     <main>
-        <section id="inicio">
-            <div>
-                <div>
-                    <img src="assets/img/carousel1.jpg" alt="Paisaje de Chile 1">
-                </div>
-                <div>
-                    <img src="assets/img/carousel2.jpg" alt="Paisaje de Chile 2">
-                </div>
-                <div>
-                    <img src="assets/img/carousel3.jpg" alt="Paisaje de Chile 3">
-                </div>
+        <section id="inicio" class="hero-section">
+            <div class="carousel-container">
+                <img src="assets/img/carousel1.jpg" alt="Paisaje de Chile 1" class="hero-img">
             </div>
         </section>
 
-        <section id="quienes-somos">
-            <h2>¿QUIÉNES SOMOS?</h2>
-            <hr>
-            <div>
-                <article>
-                    <div></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</p>
-                </article>
-
-                <article>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</p>
-                    <div></div>
-                </article>
-
-                <article>
-                    <div></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="destacados">
-            <h2>DESTACADOS</h2>
-            <hr>
-            <div>
-                <article>
-                    <img src="assets/img/card1.jpg" alt="Destino Turístico 1">
-                    <h3>Región de los Lagos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
-                </article>
-
-                <article>
-                    <img src="assets/img/card2.jpg" alt="Destino Turístico 2">
-                    <h3>Desierto de Atacama</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
-                </article>
-
-                <article>
-                    <img src="assets/img/card3.jpg" alt="Destino Turístico 3">
-                    <h3>Norte Chico</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
-                </article>
-
-                <article>
-                    <img src="assets/img/card4.jpg" alt="Destino Turístico 4">
-                    <h3>Patagonia Chilena</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="contacto">
-            <h2>CONTACTO</h2>
-            <hr>
+        <section id="quienes-somos" class="section-container">
+            <h2 class="section-title">¿QUIÉNES SOMOS?</h2>
+            <hr class="section-divider">
             
-            <form>
-                <div>
+            <div class="grid-three-columns">
+                <article class="info-card">
+                    <div class="icon-placeholder"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</p>
+                </article>
+
+                <article class="info-card">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</p>
+                    <div class="icon-placeholder"></div>
+                </article>
+
+                <article class="info-card">
+                    <div class="icon-placeholder"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="destacados" class="section-container bg-dark-variant">
+            <h2 class="section-title">DESTACADOS</h2>
+            <hr class="section-divider">
+            
+            <div class="grid-four-columns">
+                <article class="destination-card">
+                    <img src="assets/img/card1.jpg" alt="Destino Turístico 1">
+                    <div class="card-body">
+                        <h3>Región de los Lagos</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img src="assets/img/card2.jpg" alt="Destino Turístico 2">
+                    <div class="card-body">
+                        <h3>Desierto de Atacama</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img src="assets/img/card3.jpg" alt="Destino Turístico 3">
+                    <div class="card-body">
+                        <h3>Norte Chico</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img src="assets/img/card4.jpg" alt="Destino Turístico 4">
+                    <div class="card-body">
+                        <h3>Patagonia Chilena</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. El código estará ordenado e indentado.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="section-container">
+            <h2 class="section-title">CONTACTO</h2>
+            <hr class="section-divider">
+            
+            <form class="contact-form">
+                <div class="form-group">
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="asunto">Asunto</label>
                     <input type="text" id="asunto" name="asunto" required>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" rows="10" required></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
                 </div>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" class="btn-submit">Enviar</button>
             </form>
         </section>
     </main>
 
-    <footer>
-        <div>
+    <footer class="main-footer">
+        <div class="footer-brand">
             <p>VIAJES CHILE</p>
         </div>
-        <div>
+        <div class="footer-socials">
             <ul>
                 <li><a href="https://github.com" target="_blank">GitHub</a></li>
                 <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
